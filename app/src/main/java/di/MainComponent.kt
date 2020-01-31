@@ -1,0 +1,4 @@
+package di
+
+interface MainComponent {
+}
