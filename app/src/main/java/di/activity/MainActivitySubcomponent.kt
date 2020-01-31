@@ -5,7 +5,7 @@ import dagger.Subcomponent
 import dagger.android.AndroidInjector
 
 
-@Subcomponent(modules = [MainActivitySubModule::class])
+@Subcomponent
 interface MainActivitySubcomponent : AndroidInjector<MainActivity> {
 
     @Subcomponent.Factory
