@@ -1,4 +1,4 @@
-package di
+package di.activity
 
 import com.example.daggerandroidinjection.MainActivity
 import dagger.Binds

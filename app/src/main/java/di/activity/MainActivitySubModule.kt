@@ -1,4 +1,4 @@
-package di
+package di.activity
 
 import dagger.Module
 import dagger.Provides
