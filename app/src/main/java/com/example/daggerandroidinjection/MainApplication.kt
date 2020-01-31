@@ -1,4 +1,6 @@
 package com.example.daggerandroidinjection
 
-class MainApplication {
+import android.app.Application
+
+class MainApplication : Application() {
 }
