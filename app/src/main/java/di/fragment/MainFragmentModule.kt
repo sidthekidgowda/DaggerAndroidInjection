@@ -13,5 +13,5 @@ abstract class MainFragmentModule {
     @Binds
     @IntoMap
     @ClassKey(MainFragment::class)
-    abstract fun providesAndroidInjector(factory: MainFragmentSubcomponent.Factory) : AndroidInjector<*>
+    abstract fun providesAndroidInjector(factory: MainFragmentSubcomponent.Factory): AndroidInjector.Factory<*>
 }

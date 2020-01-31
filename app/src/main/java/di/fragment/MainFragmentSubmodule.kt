@@ -8,8 +8,8 @@ import javax.inject.Named
 class MainFragmentSubmodule {
 
     @Provides
-    @Named("Hello Android Injection")
-    fun provideHelloDaggerAndroidInjection() : String {
-        return "Hello Dagger Android Injection!"
+    @Named("HelloDaggerAndroid")
+    fun provideHelloDaggerAndroid() : String {
+        return "Hello Dagger Android!"
     }
 }

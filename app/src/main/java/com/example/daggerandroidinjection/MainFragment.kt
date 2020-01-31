@@ -14,7 +14,7 @@ import javax.inject.Named
 class MainFragment : Fragment() {
 
     @Inject
-    lateinit @field:Named("Hello World") var helloWorld: String
+    lateinit @field:Named("HelloDaggerAndroid") var helloDagger: String
 
     override fun onAttach(context: Context?) {
         AndroidSupportInjection.inject(this);
@@ -31,8 +31,7 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //this injected text should say Hello Dagger Android Injection
-        view.fragment_text.text = helloWorld
-
+        //this injected text should say Hello Dagger Android
+        view.fragment_text.text = helloDagger
     }
 }
