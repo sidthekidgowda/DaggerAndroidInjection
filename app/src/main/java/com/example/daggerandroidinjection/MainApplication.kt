@@ -5,6 +5,7 @@ import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import dagger.android.HasAndroidInjector
+import di.DaggerMainComponent
 import javax.inject.Inject
 
 class MainApplication() : Application(), HasAndroidInjector {
@@ -14,6 +15,7 @@ class MainApplication() : Application(), HasAndroidInjector {
 
     override fun onCreate() {
         super.onCreate()
+        DaggerMainComponent.create().inject(this)
     }
 
     override fun androidInjector(): AndroidInjector<Any> {

@@ -5,5 +5,5 @@ import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 
-@Component(modules = arrayOf(AndroidInjectionModule::class, MainActivityModule::class))
+@Component(modules = arrayOf(AndroidInjectionModule::class, MainActivityModule::class, MainFragmentModule::class))
 interface MainComponent : AndroidInjector<MainApplication>
