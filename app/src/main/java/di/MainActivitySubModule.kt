@@ -7,8 +7,8 @@ import javax.inject.Named
 @Module
 class MainActivitySubModule {
     @Provides
-    @Named("HelloWorld")
-    fun provideHelloWorld() : String {
-        return "Hello Dagger Android Injection"
+    @Named("ActivityLog")
+    fun provideLogs() : String {
+        return "Fragment has been added"
     }
 }

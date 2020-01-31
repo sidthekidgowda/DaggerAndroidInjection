@@ -6,18 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import dagger.android.support.AndroidSupportInjection
-import kotlinx.android.synthetic.main.fragment_main.view.*
-import javax.inject.Inject
-import javax.inject.Named
 
 class MainFragment : Fragment() {
-
-    @Inject
-    lateinit @field:Named("Hello World") var helloWorld: String
+//
+//    @Inject
+//    lateinit @field:Named("Hello World") var helloWorld: String
 
     override fun onAttach(context: Context?) {
-        AndroidSupportInjection.inject(this);
+//        AndroidSupportInjection.inject(this);
         super.onAttach(context)
     }
 
@@ -32,7 +28,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //this injected text should say Hello Dagger Android Injection
-        view.fragment_text.text = helloWorld
+//        view.fragment_text.text = helloWorld
 
     }
 }
