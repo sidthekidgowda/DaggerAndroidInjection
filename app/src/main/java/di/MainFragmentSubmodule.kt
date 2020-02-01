@@ -1,4 +1,4 @@
-package di.fragment
+package di
 
 import dagger.Module
 import dagger.Provides
